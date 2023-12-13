@@ -1,9 +1,4 @@
 import express from 'express'
-
 export const app = express()
-
-app.use('/teste', (req, res, next) => {
-    res.status(200).send({
-        mensagem: 'Ok, deu certo'
-    })
-})
+import router from './routes/produtos.js'
+app.use('/produtos', router)
