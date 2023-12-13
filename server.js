@@ -1,10 +1,7 @@
-import http from 'http'
-import { app } from "./app.js"
+import app from './src/app.js'
 
-const port = process.env.PORT || 4567
-const server = http.createServer(app)
+const port = 3000
 
-server.listen(port, () => {
-    console.log('App rodando');
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta ${port}`)
 })
-
