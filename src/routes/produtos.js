@@ -17,7 +17,7 @@ import
 const produtos = Router()
 
 produtos
-  .get('/', getAllProdutos)
+  .get('/',  getAllProdutos)
   .post('/', createProduto)
   .get('/:id', getProdutoById)
   .put('/:id', updateProduto)

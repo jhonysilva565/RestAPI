@@ -96,7 +96,6 @@ const deleteProduto = async (req, res) => {
   }
 }
 
-
 export { 
   getAllProdutos,
   getProdutoById,
